@@ -26,9 +26,6 @@ Responsive Design: The website is designed to be responsive, providing a seamles
 Code Quality: The HTML and CSS code in this project adhere to best practices and maintainability, making it easy to understand and maintain in the long run.
 Cross-Browser Compatibility: The website has been tested on major web browsers to ensure consistent and reliable performance for all users.
 
-# License
-This project is licensed under the MIT License.
-
 # Contact
 If you have any questions or feedback, feel free to reach out to the project maintainers:
 
