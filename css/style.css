@@ -1,0 +1,347 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+:root{
+  --fontcolor-h1: hsl(320, 69%, 42%, 100%);
+  --fontcolor-txt: hsl(244, 38%, 28%, 100%);
+  --bg-color: hsl(283, 47%, 97%, 100%);
+  --white-bg: hsl(0, 0%, 100%, 1);
+  --bg-gradient: linear-gradient(96.21deg, rgba(52,49,147,1) 0%, rgba(48,44,99,1) 99.68%);
+
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: 'Mulish', sans-serif;
+}
+
+.page {
+  max-width: 39rem;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.header-img img {
+  width: 100%;
+}
+
+header, h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 4rem;
+  color: var(--fontcolor-h1);
+}
+
+header, span {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+  color:black;
+}
+
+ header .scroll {
+  width: 3.8rem;
+  height: 10rem;
+  margin-top: 4rem;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top:8rem;
+  padding: 1rem;
+ background: var(--bg-gradient);
+}
+
+section .card {
+  margin: 3rem;
+  background: var(--white-bg);
+  border-radius: 1.9rem;
+}
+
+section .card .planets {
+  width: 6rem;
+  height: 6rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+section .card h2 {
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+  font-weight: 900;
+  font-size:clamp(1.6rem, 0.5rem + 4vw, 3rem);
+  line-height: 3.7rem;
+  color: var(--fontcolor-h1);
+}
+
+section .card p {
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  font-weight: 600;
+  font-size: clamp(1.6rem, 0.5rem + 4vw, 2rem);
+  line-height: 2rem;
+}
+
+form, fieldset {
+margin: 3rem 2rem;
+border:none;
+}
+fieldset, legend {
+  font-weight: 900;
+  font-size:3.2rem;
+  line-height: 4rem;
+  color: var(--fontcolor-h1);
+}
+
+.input-wrapper input {
+  width: 34rem;
+  height: 4.8rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border: 1.5px solid var(--fontcolor-txt);
+  border-radius: 1.6rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+}
+
+input::placeholder {
+  padding-left: 1rem;
+  padding-top: 1rem;
+  color: var(--fontcolor-txt);
+}
+
+textarea {
+  padding: 1.2rem 1.6rem 1.6rem;
+  width: 34rem;
+  height: 10rem;
+  margin-bottom: 1rem;
+  border: 1.5px solid #312D64;
+  border-radius: 1.6rem;
+  background-color: transparent;
+  font-family: 'Mulish';
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+}
+
+textarea::placeholder {
+  color: var(--fontcolor-txt);
+}
+
+.btn {
+  padding-left: 1rem;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  height: 4.5rem;
+  background: var(--bg-gradient);
+  border-radius: 1.6rem;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.bg-form img {
+  display: none;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 7.8rem;
+  background: var(--bg-gradient);
+}
+
+footer p {
+  font-weight: 600;
+  font-size: 1.9rem;
+  line-height: 2.4rem;
+  color: #FFFFFF;
+}
+
+@media(min-width:680px) {
+  .page {
+    max-width:140rem;
+    height: 100vh;
+    margin: 0 auto;
+  }
+  .header-img img {
+    width: 50rem;
+  }
+  header .header-text h1 {
+    font-size: 4rem;
+    line-height: 5.3rem;
+    white-space: nowrap;
+  }
+  header .header-text {
+    margin-top: 4rem;
+  }
+  
+  header .header-text span {
+    font-size: 2.8rem;
+    line-height: 4rem;
+  }
+
+  header .scroll {
+    margin-bottom: 3.6rem;
+  }
+
+  header .scroll img {
+    width: 4.8rem;
+  }
+
+  .main-section .card .planets {
+    margin-bottom: 2rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  form, fieldset, legend {
+    margin-bottom: 2rem;
+    font-weight: 900;
+    font-size:3.2rem;
+    line-height: 4rem;
+    color: var(--fontcolor-h1);
+  }
+  
+  form .input-wrapper {
+    padding-left: 2rem;
+  }
+  
+  input {
+    width: 59rem;
+    height: 4.8rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: 1.5px solid var(--fontcolor-txt);
+    border-radius: 1.6rem;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    color: var(--fontcolor-txt);
+  }
+  
+  textarea {
+    padding: 1.2rem 1.6rem 1.6rem;
+    width: 69rem;
+    height: 10rem;
+    margin-bottom: 2rem;
+    border: 1.5px solid #312D64;
+    border-radius: 1.6rem;
+    background-color: transparent;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: var(--fontcolor-txt);
+  }
+}
+
+@media(min-width: 1280px){
+  .page {
+    min-width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+  }
+    header {
+    display:grid;
+    grid-template-columns: 50% 50%; 
+    grid-template-areas: "B A";
+  }
+
+  header div:nth-child(1) {
+    grid-area: A;
+  }
+
+  header div:nth-child(2) {
+    grid-Area: B;
+  }
+
+  header .header-text {
+    margin-left: 30rem;
+  }
+
+  header .scroll {
+    margin-left: 16rem;
+  }
+
+  header .header-img img {
+    width: 71rem;
+  }
+
+  .main-section {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .main-section .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .main-section .card {
+    width: 43rem;
+    height: 44rem;
+}
+
+  .main-section .card p {
+    word-wrap: break-word; 
+   }
+
+   .form {
+    display: grid;
+    grid-template-columns: 65% 35%;
+  }
+
+  form {
+    align-items: flex-start;
+    margin-left: 30rem;
+  }
+   .bg-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+   }
+
+   .bg-form img {
+    display:block;
+    width: 61rem;
+    height: 61rem;
+  }
+
+}
